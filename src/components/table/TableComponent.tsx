@@ -9,10 +9,9 @@ interface ITableComponentProps {
 
 const TableComponent: FunctionComponent<ITableComponentProps> = ({ tableHeaders }) => {
   return (
-    <TableContainer className={styles.tableContainer} component={Paper}>
+    <TableContainer className={styles.tableCtn} component={Paper}>
       <Table sx={{ minWidth: 500 }} aria-label="custom pagination table">
         <TableHeader tableHeaders={tableHeaders} />
-
       </Table>
     </TableContainer>
   );
